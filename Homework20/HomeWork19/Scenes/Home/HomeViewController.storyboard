@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="HomeWork19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Delicious Food Menu (Poster)" translatesAutoresizingMaskIntoConstraints="NO" id="lej-8p-aHA">
+                                <rect key="frame" x="16" y="47" width="343" height="406"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Y6o-Wr-Xep"/>
+                                    <constraint firstAttribute="height" constant="406" id="ex5-Ra-bxk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe of the day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FS1-Hl-OnE">
+                                <rect key="frame" x="16" y="365" width="153" height="62.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oK7-qD-qkh">
+                                <rect key="frame" x="16" y="467" width="108" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="d98-PU-sbn"/>
+                                    <constraint firstAttribute="height" constant="29" id="euV-gE-VxH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bHd-hV-Y4e">
+                                <rect key="frame" x="16" y="504" width="359" height="225"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WPv-Wv-PBp">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Dxy-pu-cb9">
+                                        <rect key="frame" x="0.0" y="48.666666666666664" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="igq-mA-sO9">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE6-lu-OIR">
+                                <rect key="frame" x="322" y="467" width="37" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="arrowButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xT9-aF-nyU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bHd-hV-Y4e" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="4y6-nz-YOE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lej-8p-aHA" secondAttribute="trailing" constant="16" id="59J-Pv-BIl"/>
+                            <constraint firstItem="tE6-lu-OIR" firstAttribute="top" secondItem="lej-8p-aHA" secondAttribute="bottom" constant="14" id="8MJ-ms-ofi"/>
+                            <constraint firstItem="lej-8p-aHA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="BdH-os-a4A"/>
+                            <constraint firstItem="bHd-hV-Y4e" firstAttribute="top" secondItem="oK7-qD-qkh" secondAttribute="bottom" constant="8" symbolic="YES" id="G76-xX-z7u"/>
+                            <constraint firstItem="FS1-Hl-OnE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Jb0-Mr-GbN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lej-8p-aHA" secondAttribute="trailing" constant="16" id="KYq-6M-fmq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bHd-hV-Y4e" secondAttribute="trailing" id="NIg-KP-Vfz"/>
+                            <constraint firstItem="lej-8p-aHA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="RUX-hX-l9Y"/>
+                            <constraint firstItem="bHd-hV-Y4e" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="T5X-XH-QPZ"/>
+                            <constraint firstItem="oK7-qD-qkh" firstAttribute="top" secondItem="lej-8p-aHA" secondAttribute="bottom" constant="14" id="V0P-Tj-RoS"/>
+                            <constraint firstItem="lej-8p-aHA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bYO-St-nsq"/>
+                            <constraint firstItem="tE6-lu-OIR" firstAttribute="leading" secondItem="oK7-qD-qkh" secondAttribute="trailing" constant="198" id="bxe-jb-MN0"/>
+                            <constraint firstItem="FS1-Hl-OnE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="318" id="eSI-kM-sRs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FS1-Hl-OnE" secondAttribute="trailing" constant="206" id="foM-G7-RSV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tE6-lu-OIR" secondAttribute="trailing" constant="16" id="moe-94-oBr"/>
+                            <constraint firstItem="lej-8p-aHA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rnG-t5-3eH"/>
+                            <constraint firstItem="oK7-qD-qkh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="uzD-Ca-Eax"/>
+                            <constraint firstItem="bHd-hV-Y4e" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="wQn-nD-lAS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_home" id="BHv-Oo-xM3">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="bHd-hV-Y4e" id="ftI-MW-Boc"/>
+                        <outlet property="homeItem" destination="BHv-Oo-xM3" id="aYA-Mx-ayL"/>
+                        <outlet property="posterImageView" destination="lej-8p-aHA" id="QJ5-m7-058"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="-34.729064039408868"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Delicious Food Menu (Poster)" width="1587" height="2245"/>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="ic_home" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
